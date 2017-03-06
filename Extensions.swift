@@ -1,4 +1,12 @@
 extension UIView {
+    
+    public var width: CGFloat {
+        return self.frame.size.width
+    }
+    public var height: CGFloat {
+        return self.frame.size.height
+    }
+    
     public func push(_ viewController: UIViewController) {
         var next = self.next
         while next != nil {
